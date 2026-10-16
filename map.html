@@ -4,7 +4,7 @@ body[data-theme="dark"]{--bg:#102427;--paper:#183236;--text:#edf5f3;--muted:#b0c
 @media(prefers-color-scheme:dark){body:not([data-theme="light"]){--bg:#102427;--paper:#183236;--text:#edf5f3;--muted:#b0c6c6;--line:#345055;--brand:#76d8c1;--soft:#254b44;--shadow:none}body:not([data-theme="light"]) .notice{background:#453b24;color:#ffe7b5}}
 @media(max-width:1000px){.workspace{grid-template-columns:1fr 330px}.filters{grid-template-columns:1fr 1fr}.district-bars{grid-template-columns:repeat(3,1fr)}}@media(max-width:750px){main{padding:18px 14px}.top{align-items:flex-start}.top button{font-size:11px}.metrics{grid-template-columns:repeat(2,1fr);gap:8px}.metric{padding:12px}.metric strong{font-size:29px}.workspace{grid-template-columns:1fr}#map{height:420px}.detail{max-height:none}.filters{grid-template-columns:1fr!important}.section{padding:15px}.district-bars{grid-template-columns:repeat(2,1fr)}h2{font-size:20px}.notice{font-size:13px}.map-heading{font-size:13px}.table-caption{align-items:flex-start;flex-direction:column}.scroll{max-width:100%}th,td{min-width:130px}}
 @media print{.filters,.top button,.actions,#map,.map-heading,.legend,.district-bars{display:none!important}.workspace{display:block}.detail{max-height:none}.metrics{grid-template-columns:repeat(4,1fr)}main{padding:0}.section{box-shadow:none}.scroll{overflow:visible}table{font-size:10px}th,td{min-width:0}.notice{break-inside:avoid}}
-body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded .filters,body.embedded .section,body.embedded footer{display:none!important}body.embedded main{padding:8px}body.embedded .workspace{margin:0}body.embedded #map{height:480px}</style></head><body><main>
+body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded .filters,body.embedded .section,body.embedded footer{display:none!important}body.embedded main{padding:8px}body.embedded .workspace{margin:0}body.embedded #map{height:480px}body.preview main{padding:0}body.preview .workspace{display:block}body.preview aside,body.preview .map-heading,body.preview .legend{display:none!important}body.preview #map{height:100vh;min-height:0;border:0;border-radius:0}body.preview .leaflet-control-zoom{display:none}body.embedded:not(.preview) #map{height:calc(100vh - 130px);min-height:400px}</style></head><body><main>
 <header class="top"><div><div class="eyebrow">Материалы для прокуратуры / Ярославль / 6 районов</div><h1>Проверка торговли рядом с образовательными объектами</h1><div class="lead">Карта торговых точек рядом с образовательными объектами. Каждый случай можно открыть, измерить и проверить по официальным сведениям.</div></div><button id="theme" hidden>Сменить тему</button></header>
 <div class="notice"><b>Карта помогает выбрать случаи для проверки.</b> С 1 октября 2026 года действует новый порядок определения запретных территорий. Порог 100 м здесь используется для аналитического отбора и сам по себе не доказывает нарушение. Муниципальные запретные границы Ярославля в карту пока не загружены. <a href="#method">Основания и ограничения</a></div>
 <div class="metrics"><div class="metric"><small>Магазинов в выборке</small><strong id="k-shops">65</strong><small id="shops-note">Исходный охват города</small></div><div class="metric"><small>Соседств до 150 м</small><strong id="k-pairs">107</strong><small>Пары «точка - объект»</small></div><div class="metric"><small>Из них ближе 100 м</small><strong id="k-near">32</strong><small>Предварительный отбор</small></div><div class="metric"><small>Адресов с лицензией</small><strong id="k-license">45</strong><small>В текущей выборке</small></div></div>
@@ -6926,6 +6926,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -7007,6 +7022,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное образовательное учреждение средняя общеобразовательная школа «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 2 «Вектор»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256486",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/236457",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256486",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600516525",
+        "decision": "Приказ от 19.01.2016 №26/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное образовательное учреждение средняя общеобразовательная школа «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 2 «Вектор»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602023880",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186510",
+        "registered_address": "150044, город Ярославль, улица Урицкого,  дом 32а",
+        "changed_at": "19.05.2021"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -7045,6 +7075,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 3,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7114,6 +7145,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 10\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257145",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/278757",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257145",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600519121",
+        "decision": "Приказ от 11.05.2016 №446/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 10\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602014733",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186560",
+        "registered_address": "150033, город Ярославль,  улица Блюхера, дом 74",
+        "changed_at": "16.11.2020"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -7195,6 +7241,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 5,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7264,6 +7311,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7325,6 +7387,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 7,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7406,6 +7469,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 6 \"КВАНТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256975",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/11864",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256975",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600512532",
+        "decision": "Приказ от 29.06.2016 №571/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 6 \"КВАНТ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602024058",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186164",
+        "registered_address": "город Ярославль, улица Труфанова, дом 21а",
+        "changed_at": "17.03.2020"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7503,6 +7581,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7576,6 +7669,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7645,6 +7753,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 7 \"СТАРТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257119",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/237850",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257119",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509496",
+        "decision": "Приказ от 30.11.2015 №610/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 7 \"СТАРТ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602022043",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186773",
+        "registered_address": "город Ярославль, улица Труфанова, дом 4",
+        "changed_at": "15.09.2021"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7722,6 +7845,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 7 \"СТАРТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257119",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/237850",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257119",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509496",
+        "decision": "Приказ от 30.11.2015 №610/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 7 \"СТАРТ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602022043",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186773",
+        "registered_address": "город Ярославль, улица Труфанова, дом 4",
+        "changed_at": "15.09.2021"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7795,6 +7933,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7864,6 +8017,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257186",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/202089",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257186",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600509463",
+        "decision": "Приказ от 08.06.2016 №508/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 9 ИМЕНИ ЕЛЕНЫ КОЛЕСОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7602025037",
+        "kpp": "760201001",
+        "number": "Л035-01245-76/00186424",
+        "registered_address": "город Ярославль, улица Елены Колесовой, дом 38",
+        "changed_at": "08.06.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7902,6 +8070,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 15,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -7967,6 +8136,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 12 \"СИНТЕЗ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257123",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/243903",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257123",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600626790",
+        "decision": "Приказ от 19.10.2016 №726/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 12 \"СИНТЕЗ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7603019727",
+        "kpp": "760301001",
+        "number": "Л035-01245-76/00186519",
+        "registered_address": "город Ярославль, улица Панфилова, дом 9а",
+        "changed_at": "19.10.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -8005,6 +8189,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 17,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8098,6 +8283,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств имени М.А. Балакирева\" города Ярославля",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256873",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/243136",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256873",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600624370",
+        "decision": "Приказ от 26.10.2016 №759/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств имени М.А. Балакирева\" города Ярославля",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7603016490",
+        "kpp": "760301001",
+        "number": "Л035-01245-76/00186517",
+        "registered_address": "Российская Федерация, 150051, город Ярославль, проспект Машиностроителей, дом 11-а",
+        "changed_at": "19.06.2024"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8259,6 +8459,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 12 \"СИНТЕЗ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257123",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/243903",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257123",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600626790",
+        "decision": "Приказ от 19.10.2016 №726/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 12 \"СИНТЕЗ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7603019727",
+        "kpp": "760301001",
+        "number": "Л035-01245-76/00186519",
+        "registered_address": "город Ярославль, улица Панфилова, дом 9а",
+        "changed_at": "19.10.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8352,6 +8567,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств имени М.А. Балакирева\" города Ярославля",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256873",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/243136",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256873",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600624370",
+        "decision": "Приказ от 26.10.2016 №759/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств имени М.А. Балакирева\" города Ярославля",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7603016490",
+        "kpp": "760301001",
+        "number": "Л035-01245-76/00186517",
+        "registered_address": "Российская Федерация, 150051, город Ярославль, проспект Машиностроителей, дом 11-а",
+        "changed_at": "19.06.2024"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8449,6 +8679,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 17 ИМЕНИ Л.П. СЕМЕНОВОЙ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257075",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/170061",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257075",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600622059",
+        "decision": "Приказ от 05.04.2016 №350/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 17 ИМЕНИ Л.П. СЕМЕНОВОЙ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7603019710",
+        "kpp": "760301001",
+        "number": "Л035-01245-76/00186377",
+        "registered_address": "город Ярославль, проспект Авиаторов, дом 84",
+        "changed_at": "05.04.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8487,6 +8732,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 22,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8525,6 +8771,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 23,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8563,6 +8810,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 24,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8605,6 +8853,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/291278",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/318388",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/291278",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600680249",
+        "decision": "Распоряжение от 11.07.2016 №1891-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7604011791",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121053",
+        "registered_address": "150003, Ярославская область, г. Ярославль, ул. Советская, д. 14",
+        "changed_at": "09.02.2026"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8643,6 +8906,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 26,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8685,6 +8949,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/291278",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/318388",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/291278",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600680249",
+        "decision": "Распоряжение от 11.07.2016 №1891-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7604011791",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121053",
+        "registered_address": "150003, Ярославская область, г. Ярославль, ул. Советская, д. 14",
+        "changed_at": "09.02.2026"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8723,6 +9002,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 28,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8761,6 +9041,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 29,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8830,6 +9111,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 30,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8911,6 +9193,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 23 ИМЕНИ ЯРОСЛАВА МУДРОГО\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257190",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/239581",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257190",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600679754",
+        "decision": "Приказ от 09.12.2015 №651/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 23 ИМЕНИ ЯРОСЛАВА МУДРОГО\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604040930",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186774",
+        "registered_address": "150003, город Ярославль, улица Терешковой, дом 20",
+        "changed_at": "09.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -8980,6 +9277,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 32,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9018,6 +9316,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 33,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9095,6 +9394,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное образовательное учреждение средняя общеобразовательная школа «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 3 им. Н.П. Гусева»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256457",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/106681",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256457",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600678115",
+        "decision": "Приказ от 23.12.2015 №726/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное образовательное учреждение средняя общеобразовательная школа «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 3 им. Н.П. Гусева»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604040915",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186662",
+        "registered_address": "150014, город Ярославль,  улица Салтыкова-Щедрина, дом 42а",
+        "changed_at": "23.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9204,6 +9518,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 35,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9313,6 +9628,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 36,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9422,6 +9738,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 37,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9464,6 +9781,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/291278",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/318388",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/291278",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600680249",
+        "decision": "Распоряжение от 11.07.2016 №1891-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7604011791",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121053",
+        "registered_address": "150003, Ярославская область, г. Ярославль, ул. Советская, д. 14",
+        "changed_at": "09.02.2026"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9525,6 +9857,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 39,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9602,6 +9935,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 40,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9679,6 +10013,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 41,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9721,6 +10056,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 23 ИМЕНИ ЯРОСЛАВА МУДРОГО\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257190",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/239581",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257190",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600679754",
+        "decision": "Приказ от 09.12.2015 №651/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 23 ИМЕНИ ЯРОСЛАВА МУДРОГО\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604040930",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186774",
+        "registered_address": "150003, город Ярославль, улица Терешковой, дом 20",
+        "changed_at": "09.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9826,6 +10176,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 43,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9864,6 +10215,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 44,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9906,6 +10258,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/291278",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/318388",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/291278",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600680249",
+        "decision": "Распоряжение от 11.07.2016 №1891-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМ. П.Г. ДЕМИДОВА\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7604011791",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121053",
+        "registered_address": "150003, Ярославская область, г. Ярославль, ул. Советская, д. 14",
+        "changed_at": "09.02.2026"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -9944,6 +10311,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 46,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10021,6 +10389,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 47,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10059,6 +10428,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 48,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10097,6 +10467,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 49,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10135,6 +10506,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 50,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10173,6 +10545,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 51,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10242,6 +10615,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 52,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10311,6 +10685,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 53,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10349,6 +10724,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 54,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10422,6 +10798,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 24 ИМ. А.С. ПУШКИНА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257053",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/133494",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257053",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600679710",
+        "decision": "Приказ от 19.10.2016 №728/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 24 ИМ. А.С. ПУШКИНА\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604040922",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186334",
+        "registered_address": "150000, город Ярославль, улица Большая Октябрьская, дом 64а",
+        "changed_at": "19.10.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10487,6 +10878,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256989",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/26495",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256989",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600683770",
+        "decision": "Приказ от 22.03.2016 №288/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604041147",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186187",
+        "registered_address": "город Ярославль, улица Угличская, дом 27",
+        "changed_at": "22.03.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10529,6 +10935,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное автономное учреждение дополнительного образования \"Детская школа искусств № 1\" города Ярославля",
       "license_url": "https://islod.obrnadzor.gov.ru/view/255257",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/288264",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/255257",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600686596",
+        "decision": "Приказ от 23.09.2016 №676/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное автономное учреждение дополнительного образования \"Детская школа искусств № 1\" города Ярославля",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604043296",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186567",
+        "registered_address": "Российская Федерация, 150049, город Ярославль, улица Городской вал, дом 1",
+        "changed_at": "23.09.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10606,6 +11027,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 24 ИМ. А.С. ПУШКИНА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257053",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/133494",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257053",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600679710",
+        "decision": "Приказ от 19.10.2016 №728/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 24 ИМ. А.С. ПУШКИНА\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604040922",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186334",
+        "registered_address": "150000, город Ярославль, улица Большая Октябрьская, дом 64а",
+        "changed_at": "19.10.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10679,6 +11115,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 59,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -10744,6 +11181,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257136",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/263410",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257136",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790678",
+        "decision": "Приказ от 11.01.2016 №5/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605014160",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186543",
+        "registered_address": "город Ярославль, улица Курчатова, дом 8",
+        "changed_at": "11.01.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -10841,6 +11293,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС №34 ИМЕНИ ЛАТАТУЕВА В.Н.»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257141",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/273109",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257141",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600984894",
+        "decision": "Приказ от 30.12.2015 №769/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС №34 ИМЕНИ ЛАТАТУЕВА В.Н.»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607005323",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186802",
+        "registered_address": "150030, город  Ярославль, улица Гоголя, дом 7",
+        "changed_at": "30.12.2015"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -10938,6 +11405,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 26 ИМЕНИ АЛЕКСЕЯ МАЛАНОВА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257024",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/88647",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257024",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790249",
+        "decision": "Приказ от 02.12.2015 №621/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 26 ИМЕНИ АЛЕКСЕЯ МАЛАНОВА\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605017683",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186647",
+        "registered_address": "150002, город Ярославль, улица Будкина, дом 11",
+        "changed_at": "02.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11015,6 +11497,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 63,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11100,6 +11583,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 64,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11173,6 +11657,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 65,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11238,6 +11723,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257136",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/263410",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257136",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790678",
+        "decision": "Приказ от 11.01.2016 №5/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605014160",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186543",
+        "registered_address": "город Ярославль, улица Курчатова, дом 8",
+        "changed_at": "11.01.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11311,6 +11811,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 67,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11353,6 +11854,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/290385",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/316784",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/290385",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600791283",
+        "decision": "Распоряжение от 04.08.2016 №2122-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7605009467",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121052",
+        "registered_address": "150023, обл. Ярославская, г. Ярославль, пр-кт. Московский, д. 88",
+        "changed_at": "24.12.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11395,6 +11911,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/290385",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/316784",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/290385",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600791283",
+        "decision": "Распоряжение от 04.08.2016 №2122-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7605009467",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121052",
+        "registered_address": "150023, обл. Ярославская, г. Ярославль, пр-кт. Московский, д. 88",
+        "changed_at": "24.12.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11460,6 +11991,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257136",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/263410",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257136",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790678",
+        "decision": "Приказ от 11.01.2016 №5/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 29 \"ЯРКАМПУС\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605014160",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186543",
+        "registered_address": "город Ярославль, улица Курчатова, дом 8",
+        "changed_at": "11.01.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11565,6 +12111,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 30 \"ТРАЕКТОРИЯ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257067",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/160526",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257067",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600788577",
+        "decision": "Приказ от 25.11.2015 №587/05-3",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 30 \"ТРАЕКТОРИЯ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605016513",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186710",
+        "registered_address": "город Ярославль, улица Нефтяников, дом 26",
+        "changed_at": "25.11.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11607,6 +12168,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 28 \"ВОЛГА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256768",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/177702",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256768",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600983519",
+        "decision": "Приказ от 26.01.2016 №45/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 28 \"ВОЛГА\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607014536",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00273930",
+        "registered_address": "150030, город Ярославль, Суздальское шоссе, дом 15",
+        "changed_at": "29.12.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11645,6 +12221,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 73,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11683,6 +12260,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 74,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11844,6 +12422,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 75,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -11929,6 +12508,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256989",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/26495",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256989",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600683770",
+        "decision": "Приказ от 22.03.2016 №288/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604041147",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186187",
+        "registered_address": "город Ярославль, улица Угличская, дом 27",
+        "changed_at": "22.03.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -11967,6 +12561,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 77,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12036,6 +12631,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256989",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/26495",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256989",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600683770",
+        "decision": "Приказ от 22.03.2016 №288/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604041147",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186187",
+        "registered_address": "город Ярославль, улица Угличская, дом 27",
+        "changed_at": "22.03.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -12121,6 +12731,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257180",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/167285",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257180",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600844391",
+        "decision": "Приказ от 07.12.2015 №632/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028416",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186715",
+        "registered_address": "150003, город Ярославль, улица Советская, дом 66",
+        "changed_at": "07.12.2015"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -12202,6 +12827,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256989",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/26495",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256989",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600683770",
+        "decision": "Приказ от 22.03.2016 №288/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 25 \"СОЗВЕЗДИЕ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7604041147",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186187",
+        "registered_address": "город Ярославль, улица Угличская, дом 27",
+        "changed_at": "22.03.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12244,6 +12884,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256683",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/254454",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256683",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790502",
+        "decision": "Приказ от 10.03.2015 №81/05-03",
+        "status": "Действующая",
+        "holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605007420",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186788",
+        "registered_address": "150046, г. Ярославль, ул. Большие Полянки, д. 5",
+        "changed_at": "14.02.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12286,6 +12941,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/290385",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/316784",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/290385",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600791283",
+        "decision": "Распоряжение от 04.08.2016 №2122-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7605009467",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121052",
+        "registered_address": "150023, обл. Ярославская, г. Ярославль, пр-кт. Московский, д. 88",
+        "changed_at": "24.12.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12328,6 +12998,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256683",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/254454",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256683",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790502",
+        "decision": "Приказ от 10.03.2015 №81/05-03",
+        "status": "Действующая",
+        "holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605007420",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186788",
+        "registered_address": "150046, г. Ярославль, ул. Большие Полянки, д. 5",
+        "changed_at": "14.02.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12393,6 +13078,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256903",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/44643",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256903",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600841740",
+        "decision": "Приказ от 25.11.2016 №873/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028159",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186218",
+        "registered_address": "150054, город Ярославль, улица Щапова, дом 14",
+        "changed_at": "25.11.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12435,6 +13135,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256683",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/254454",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256683",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600790502",
+        "decision": "Приказ от 10.03.2015 №81/05-03",
+        "status": "Действующая",
+        "holder": "ГОСУДАРСТВЕННОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ЯРОСЛАВСКОЙ ОБЛАСТИ \"ЯРОСЛАВСКИЙ ТЕХНОЛОГО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7605007420",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186788",
+        "registered_address": "150046, г. Ярославль, ул. Большие Полянки, д. 5",
+        "changed_at": "14.02.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12500,6 +13215,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256903",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/44643",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256903",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600841740",
+        "decision": "Приказ от 25.11.2016 №873/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028159",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186218",
+        "registered_address": "150054, город Ярославль, улица Щапова, дом 14",
+        "changed_at": "25.11.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12661,6 +13391,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 87,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12746,6 +13477,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/256903",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/44643",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/256903",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600841740",
+        "decision": "Приказ от 25.11.2016 №873/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 21\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028159",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186218",
+        "registered_address": "150054, город Ярославль, улица Щапова, дом 14",
+        "changed_at": "25.11.2016"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12788,6 +13534,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/290385",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/316784",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/290385",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600791283",
+        "decision": "Распоряжение от 04.08.2016 №2122-06",
+        "status": "Действующая",
+        "holder": "ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \"ЯРОСЛАВСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ\"",
+        "authority": "Федеральная служба по надзору в сфере образования и науки",
+        "term": "Бессрочная",
+        "inn": "7605009467",
+        "kpp": "760401001",
+        "number": "Л035-00115-76/00121052",
+        "registered_address": "150023, обл. Ярославская, г. Ярославль, пр-кт. Московский, д. 88",
+        "changed_at": "24.12.2025"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12873,6 +13634,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257180",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/167285",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257180",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600844391",
+        "decision": "Приказ от 07.12.2015 №632/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028416",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186715",
+        "registered_address": "150003, город Ярославль, улица Советская, дом 66",
+        "changed_at": "07.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12915,6 +13691,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257180",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/167285",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257180",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600844391",
+        "decision": "Приказ от 07.12.2015 №632/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 19»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7606028416",
+        "kpp": "760601001",
+        "number": "Л035-01245-76/00186715",
+        "registered_address": "150003, город Ярославль, улица Советская, дом 66",
+        "changed_at": "07.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12953,6 +13744,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 92,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -12991,6 +13783,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 93,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13029,6 +13822,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 94,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13190,6 +13984,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 31 \"АКСИОМА\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257204",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/285444",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257204",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600987160",
+        "decision": "Приказ от 23.11.2016 №858/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 31 \"АКСИОМА\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607014617",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186566",
+        "registered_address": "150035, город Ярославль, улица Калинина, дом 35а",
+        "changed_at": "23.11.2016"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -13287,6 +14096,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС №34 ИМЕНИ ЛАТАТУЕВА В.Н.»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257141",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/273109",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257141",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600984894",
+        "decision": "Приказ от 30.12.2015 №769/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС №34 ИМЕНИ ЛАТАТУЕВА В.Н.»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607005323",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186802",
+        "registered_address": "150030, город  Ярославль, улица Гоголя, дом 7",
+        "changed_at": "30.12.2015"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -13380,6 +14204,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 35\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257157",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/13310",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257157",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600984400",
+        "decision": "Приказ от 16.12.2015 №682/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 35\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607014543",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00273951",
+        "registered_address": "150006, город Ярославль, улица Светлая, дом 36",
+        "changed_at": "16.12.2015"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -13445,6 +14284,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257159",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/32358",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257159",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600983211",
+        "decision": "Приказ от 15.03.2016 №250/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607001287",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186195",
+        "registered_address": "150010, город Ярославль, улица Звездная, дом 11",
+        "changed_at": "22.02.2019"
+      },
       "priority_review": true,
       "review_label": "Приоритет дополнительной проверки"
     },
@@ -13570,6 +14424,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 99,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13659,6 +14514,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "near",
       "number": 100,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13732,6 +14588,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 35\"",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257157",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/13310",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257157",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600984400",
+        "decision": "Приказ от 16.12.2015 №682/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА \"ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 35\"",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607014543",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00273951",
+        "registered_address": "150006, город Ярославль, улица Светлая, дом 36",
+        "changed_at": "16.12.2015"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13801,6 +14672,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257159",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/32358",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257159",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600983211",
+        "decision": "Приказ от 15.03.2016 №250/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607001287",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186195",
+        "registered_address": "150010, город Ярославль, улица Звездная, дом 11",
+        "changed_at": "22.02.2019"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13839,6 +14725,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 103,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13877,6 +14764,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 104,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -13966,6 +14854,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257159",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/32358",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257159",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600983211",
+        "decision": "Приказ от 15.03.2016 №250/05-03",
+        "status": "Действующая",
+        "holder": "МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА «ОБРАЗОВАТЕЛЬНЫЙ КОМПЛЕКС № 36»",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607001287",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186195",
+        "registered_address": "150010, город Ярославль, улица Звездная, дом 11",
+        "changed_at": "22.02.2019"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -14008,6 +14911,21 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "license_holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств им. Дмитрия Когана\" города Ярославля",
       "license_url": "https://islod.obrnadzor.gov.ru/view/257650",
       "license_branch_url": "https://islod.obrnadzor.gov.ru/branch/210548",
+      "license_details": {
+        "source_url": "https://islod.obrnadzor.gov.ru/view/257650",
+        "checked_at": "15.10.2026",
+        "ogrn": "1027600982925",
+        "decision": "Приказ от 29.12.2017 №325/05-03",
+        "status": "Действующая",
+        "holder": "муниципальное учреждение дополнительного образования \"Детская школа искусств им. Дмитрия Когана\" города Ярославля",
+        "authority": "Министерство образования Ярославской области",
+        "term": "Бессрочная",
+        "inn": "7607015265",
+        "kpp": "760401001",
+        "number": "Л035-01245-76/00186101",
+        "registered_address": "Российская Федерация, город Ярославль, Московский проспект, д. 139-А",
+        "changed_at": "29.12.2017"
+      },
       "priority_review": false,
       "review_label": "Предварительное соседство"
     },
@@ -14046,6 +14964,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
       "status": "margin",
       "number": 107,
       "license_checked_at": "15.10.2026",
+      "license_details": {},
       "priority_review": false,
       "review_label": "Предварительное соседство"
     }
@@ -14066,7 +14985,7 @@ body.embedded header,body.embedded .notice,body.embedded .metrics,body.embedded 
     ]
   }
 }</script><script src="vendor/leaflet.js"></script><script>
-'use strict';const embeddedParams=new URLSearchParams(location.hash.slice(1));if(embeddedParams.get('embedded'))document.body.classList.add('embedded');if(embeddedParams.get('theme'))document.body.dataset.theme=embeddedParams.get('theme');
+'use strict';const embeddedParams=new URLSearchParams(location.hash.slice(1));if(embeddedParams.get('embedded'))document.body.classList.add('embedded');if(embeddedParams.get('preview'))document.body.classList.add('preview');if(embeddedParams.get('theme'))document.body.dataset.theme=embeddedParams.get('theme');
 const DATA=JSON.parse(document.getElementById('dataset').textContent),ALL=DATA.cases,$=id=>document.getElementById(id);let filtered=ALL,active=null,map=null,layer=null,highlight=null;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const priority=r=>r.priority_review===true;
@@ -14095,10 +15014,10 @@ function render(updateHash=true){const district=$('district').value,q=$('search'
 function fit(){if(map&&filtered.length)map.fitBounds(L.latLngBounds(filtered.map(r=>r.start)).pad(.12),{maxZoom:16})}
 function init(){for(const d of DATA.districts)$('district').add(new Option(d.name,d.name));const hash=new URLSearchParams(location.hash.slice(1));restoreFilters(hash);
  if(typeof L!=='undefined')$('map').replaceChildren();
- try{if(typeof L!=='undefined'){map=L.map('map',{scrollWheelZoom:false}).setView([57.626,39.87],12);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19}).addTo(map);for(const d of DATA.districts)for(const r of d.rings)L.polygon([r['внешнее'].map(p=>[p[1],p[0]]),...(r['внутренние']||[]).map(r=>r.map(p=>[p[1],p[0]]))],{color:'#638b85',weight:1,fillOpacity:.025,interactive:false}).addTo(map);layer=L.layerGroup().addTo(map);highlight=L.layerGroup().addTo(map);$('fit').hidden=false}}catch(e){$('map').textContent='Подложка недоступна. Все случаи и расстояния доступны в реестре.';map=null}
+ try{if(typeof L!=='undefined'){map=L.map('map',{scrollWheelZoom:false}).setView([57.626,39.87],12);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19}).on('load',()=>{if(document.body.classList.contains('preview'))parent.postMessage({type:'geo-map-preview-ready'},'*')}).addTo(map);for(const d of DATA.districts)for(const r of d.rings)L.polygon([r['внешнее'].map(p=>[p[1],p[0]]),...(r['внутренние']||[]).map(r=>r.map(p=>[p[1],p[0]]))],{color:'#638b85',weight:1,fillOpacity:.025,interactive:false}).addTo(map);layer=L.layerGroup().addTo(map);highlight=L.layerGroup().addTo(map);$('fit').hidden=false}}catch(e){$('map').textContent='Подложка недоступна. Все случаи и расстояния доступны в реестре.';map=null}
  document.body.classList.add('ready');$('theme').hidden=false;$('priority-focus').hidden=false;$('priority-focus').onclick=()=>{$('review-filter').value='priority';render();fit()};$('csv').hidden=false;for(const id of ['district','distance','method-filter','review-filter','sort'])$(id).addEventListener('change',()=>{render();fit()});$('search').addEventListener('input',()=>render());$('reset').onclick=()=>{for(const id of ['district','search','method-filter','review-filter'])$(id).value='';$('distance').value='all';$('sort').value='district';render();fit()};$('fit').onclick=fit;$('theme').onclick=()=>{const dark=document.body.dataset.theme?document.body.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.body.dataset.theme=dark?'light':'dark'};
  document.addEventListener('click',e=>{if(e.target.closest('a[href="#method"]')){e.preventDefault();$('method').scrollIntoView({behavior:'smooth'});return}const a=e.target.closest('[data-case]');if(a){e.preventDefault();selectCase(a.dataset.case)}const b=e.target.closest('[data-district]');if(b){$('district').value=b.dataset.district;render();fit()}});
  $('csv').onclick=()=>{const cs=[['Случай','Район','Магазин','Адрес','Образовательный объект','Адрес объекта','Метры','Метод','Лицензия','Приоритет','Статус запретной зоны'],...filtered.map(r=>[r.id,r.district,r.shop,r.address,r.edu_name,r.edu_address,r.distance_m,r.method,r.license_note,r.review_label,'Не определён: акт и границы не подтверждены'])];const encode=v=>'"'+String(v).replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"';const blob=new Blob(['\ufeff'+cs.map(r=>r.map(encode).join(';')).join('\r\n')],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Случаи - Ярославль.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),500)};
- render(false);if(hash.get('case'))selectCase(hash.get('case'));else fit();window.addEventListener('hashchange',()=>{const h=new URLSearchParams(location.hash.slice(1));restoreFilters(h);render(false);if(h.get('case'))selectCase(h.get('case'));else{active=null;if(highlight)highlight.clearLayers();fit()}});
+ render(false);if(hash.get('case'))selectCase(hash.get('case'));else fit();window.addEventListener('hashchange',()=>{const h=new URLSearchParams(location.hash.slice(1));if(h.get('theme'))document.body.dataset.theme=h.get('theme');restoreFilters(h);render(false);if(h.get('case'))selectCase(h.get('case'));else{active=null;if(highlight)highlight.clearLayers();fit()}});
 }init();
 </script></body></html>
